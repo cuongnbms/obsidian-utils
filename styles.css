@@ -1,0 +1,36 @@
+.mode-radio-hidden {
+	display: none !important;
+}
+
+/* Thin outline frame, no fill, no shadow. */
+.mode-radio-group {
+	display: inline-flex;
+	align-items: center;
+	gap: 1px;
+	padding: 1px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+}
+
+.mode-radio-group .mode-radio-option {
+	border-radius: var(--radius-s);
+}
+
+/* Base look (padding, radius, hover) comes from Obsidian's .clickable-icon. */
+.mode-radio-option:not(.is-active) {
+	opacity: 0.55;
+}
+
+.mode-radio-option:not(.is-active):hover {
+	opacity: 1;
+}
+
+.mode-radio-option.is-active {
+	color: var(--icon-color-focused);
+	opacity: 1;
+	background-color: var(--background-modifier-hover);
+}
+
+.mode-radio-option:focus-visible {
+	box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
+}

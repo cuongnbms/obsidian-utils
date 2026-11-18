@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-utils",
+  "name": "Obsidian Utils",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Personal utilities: view-mode radio group in the note header, and more.",
+  "author": "cuongnb",
+  "isDesktopOnly": false
+}
